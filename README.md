@@ -18,7 +18,7 @@
 
 - **6.** Si vous avez déjà "Git" installé sur votre machine, vous pouvez taper la commande suivante pour cloner le projet sur votre machine mais avant ça changer le powershell par le git bash
 ```bash
-git clone "lien du projet"
+git clone https://github.com/bricelorin007/RENDU_MBDIA.git
 ```
 
 - **7.** Si vous n'avez pas "Git" installé sur votre machine, vous pouvez télécharger le projet en format zip et le décompresser dans le dossier "RENDU_MBDIA"
