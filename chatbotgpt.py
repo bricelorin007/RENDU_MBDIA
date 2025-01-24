@@ -50,3 +50,13 @@ st.session_state["openai_model"] = st.selectbox(
     index=0,
     format_func=lambda x: x.upper(),
 )
+
+# Slider to change max tokens
+
+st.session_state["max_tokens"] = st.slider(
+    "Max tokens",
+    min_value=50,
+    max_value=500,
+    value=200,
+    step=50,
+)
