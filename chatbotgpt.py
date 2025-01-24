@@ -28,7 +28,7 @@ if prompt := st.chat_input("What is up?"):
     with st.chat_message("user"):
         st.markdown(prompt)
 
- # Display assistant response in chat message container
+# Display assistant response in chat message container
     with st.chat_message("assistant"):
         stream = client.chat.completions.create(
             model=st.session_state["openai_model"],
@@ -41,3 +41,12 @@ if prompt := st.chat_input("What is up?"):
         )
         response = st.write_stream(stream)
     st.session_state.messages.append({"role": "assistant", "content": response})
+
+#Selectbox to change model
+
+st.session_state["openai_model"] = st.selectbox(
+    "Select a model",
+    ["gpt-3.5-turbo", "gpt-3.5-turbo-instruct", "gpt-3.5-turbo-1106", "gpt-3.5-turbo-0125"],
+    index=0,
+    format_func=lambda x: x.upper(),
+)
