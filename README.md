@@ -28,7 +28,7 @@ git clone https://github.com/bricelorin007/RENDU_MBDIA.git
 ls
 ```
 
-- **9.** Puis faites la commande suivante pour installer les dépendances du projet
+- **9.** Puis faites la commande suivante pour se placer dans le dossier
 ```bash
 cd RENDU_MBDIA
 ```
